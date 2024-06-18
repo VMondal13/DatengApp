@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="mb-3">
+        <label>Pick User</label>
+        <select 
+            name="" 
+            class="form-select">
+            <option *ngFor="let user of this.usersFromHomeComp" [value]="user.userName">
+                {{user.userName}}
+            </option>
+        </select>
+    </div>  
+</div>
